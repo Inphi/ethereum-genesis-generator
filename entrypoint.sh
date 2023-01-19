@@ -97,4 +97,4 @@ case $1 in
 esac
 
 # Start webserver
-cd /data && exec python -m SimpleHTTPServer "$SERVER_PORT"
+#cd /data && exec python -m SimpleHTTPServer "$SERVER_PORT"
