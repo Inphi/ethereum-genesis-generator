@@ -64,6 +64,7 @@ elif int(data['chain_id']) == 5:
             "eip3855TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
             "eip3651TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
             "eip3860TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
+            "eip4844TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['eip4844_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
             "gasLimitBoundDivisor": "0x400",
             "maxCodeSize": "0x6000",
             "maxCodeSizeTransition": "0x0",
@@ -1017,7 +1018,8 @@ elif int(data['chain_id']) == 11155111:
             "eip4895TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
             "eip3855TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
             "eip3651TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
-            "eip3860TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot))
+            "eip3860TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
+            "eip4844TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['eip4844_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
         },
         "genesis": {
             "seal": {
@@ -1103,6 +1105,7 @@ else:
             "eip3855TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
             "eip3651TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
             "eip3860TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
+            "eip4844TransitionTimestamp": hex(int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['eip4844_fork_epoch']) * slots_per_epoch * seconds_per_slot)),
             "terminalTotalDifficulty":"0x0"
         },
         "genesis": {
