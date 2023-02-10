@@ -36,6 +36,7 @@ elif int(data['chain_id']) == 5:
             "mergeForkBlock":99999999,
             "terminalTotalDifficulty":0,
             "shanghaiTime": int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot),
+            "cancunTime": int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['eip4844_fork_epoch']) * slots_per_epoch * seconds_per_slot),
             "trustedCheckpoint": {
                 "sectionIndex": 66,
                 "sectionHead": "0xeea3a7b2cb275956f3049dd27e6cdacd8a6ef86738d593d556efee5361019475",
@@ -352,6 +353,7 @@ elif int(data['chain_id']) == 11155111:
             "mergeForkBlock":1735371,
             "terminalTotalDifficulty":0,
             "shanghaiTime": int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot),
+            "cancunTime": int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['eip4844_fork_epoch']) * slots_per_epoch * seconds_per_slot),
         },
         "alloc":{
             "0xa2A6d93439144FFE4D27c9E088dCD8b783946263": {"balance": "0xD3C21BCECCEDA1000000"},
@@ -396,6 +398,7 @@ else:
             "preMergeForkBlock":0,
             "terminalTotalDifficulty":0,
             "shanghaiTime": int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * slots_per_epoch * seconds_per_slot),
+            "cancunTime": int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['eip4844_fork_epoch']) * slots_per_epoch * seconds_per_slot),
         },
         "alloc": {
             # Allocate 1 wei to all possible pre-compiles.
